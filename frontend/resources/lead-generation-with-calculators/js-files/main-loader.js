@@ -1,0 +1,1 @@
+$(window).load(function(){$('body').addClass('loaded');$('h1').css('color','#222222');$('body').trigger('pageLoaderEnd');});$(document).ready(function() {}); 

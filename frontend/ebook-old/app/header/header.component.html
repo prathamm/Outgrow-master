@@ -1,0 +1,21 @@
+<header class='full-width half-height is-not-signed-in'>
+  <div class='lecture-left'>
+    <a class="nav-icon-list show-xs hidden-sm hidden-md hidden-lg collapsed" role="button" data-toggle="collapse" href="#courseSidebar" aria-expanded="false" aria-controls="courseSidebar">
+        <i class='fa fa-list'></i>
+      </a>
+  </div>
+  
+  <div class='lecture-nav'>
+    <a class='nav-btn' [routerLink]="['Chapter-' + currentChapter.prevChapter.id]" (click)="onSelect(currentChapter.prevChapter)" id='lecture_previous_button'>
+      <i class='fa fa-arrow-left'></i>
+      &nbsp;
+      <span class='nav-text'>Previous Lecture</span>
+    </a>
+    <a class='nav-btn complete' [routerLink]="['Chapter-' + currentChapter.nextChapter.id]" (click)="onSelect(currentChapter.nextChapter)" id='lecture_complete_button'>
+      <span class='nav-text'>Complete and continue</span>
+      &nbsp;
+      <i class='fa fa-arrow-right'></i>
+    </a>
+  </div>
+  
+</header>

@@ -1,0 +1,57 @@
+<div class="course-sidebar lecture-page collapse navbar-collapse navbar-sidebar-collapse" id="courseSidebar" aria-expanded="false">
+  <h2>Lead Generation With Interactive Calculators</h2>
+  <!-- Course Progress -->
+  
+  <div class="course-progress lecture-page is-at-top">
+    <div class="progressbar">
+      <div class="progressbar-fill" style="min-width: 100%;"></div>
+    </div>
+    <div class="small course-progress-percentage">
+      <span class="percentage">
+        100%
+      </span>
+      COMPLETE
+    </div>
+  </div>
+  
+  <!-- Lecture list on courses page (enrolled user) -->
+
+  <div class="row lecture-sidebar">
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="76363">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        Introduction
+      </div>
+      <ul class="section-list">
+        
+        <li *ngFor='let chapter of chapters' class="section-item completed next-lecture">
+          <a class="item" data-no-turbolinks="" [routerLink]="['Chapter-' + chapter.id]" (click)="onSelect(chapter)" id="sidebar_link_1105813">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                {{chapter.name}}
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+  
+  <!-- TODO REPLACE WITH GRAYSCALE TEACHABLE LOGO -->
+<!--   <a class='hidden-xs col-md-2' href='http://usefedora.com/?src=lecture-player' src="https://d2oz8i5n9se8ej.cloudfront.net/assets/teachable-logo-coolgrey-ec43de9a3c5ec7893f24334108d8ba7c59fd2ca74ccb07d7125e946e4dd5ec54.svg" id='powered-by-fedora' target='_blank'></a>
+  </a>
+ -->  
+</div>
